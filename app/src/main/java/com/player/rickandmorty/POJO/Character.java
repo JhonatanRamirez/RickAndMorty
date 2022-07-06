@@ -1,8 +1,11 @@
 package com.player.rickandmorty.POJO;
 
+import android.os.Parcelable;
+
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Character {
+public class Character implements Serializable {
 
     int id;
     String name;

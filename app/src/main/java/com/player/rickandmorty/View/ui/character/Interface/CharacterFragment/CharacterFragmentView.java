@@ -1,4 +1,4 @@
-package com.player.rickandmorty.View.ui.character.Interface;
+package com.player.rickandmorty.View.ui.character.Interface.CharacterFragment;
 
 import com.player.rickandmorty.POJO.Character;
 

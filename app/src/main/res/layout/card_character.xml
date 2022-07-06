@@ -1,0 +1,70 @@
+<LinearLayout android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_marginTop="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:weightSum="10"
+    android:gravity="center"
+    android:background="@drawable/elevation_card"
+    android:orientation="horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginRight="18dp"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgChar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:padding="5dp"
+          android:layout_gravity="center"
+
+            app:shapeAppearanceOverlay="@style/circlePhotoProfile"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="4"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        >
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTextInicio"
+            android:textSize="12sp"
+            android:text="Rick"/>
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/colorTextInicio"
+            android:textSize="12sp"
+            android:text="Servicio de piscina habilitado"/>
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/ver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:layout_marginLeft="10dp"
+        android:text="Ver Episodios "/>
+
+</LinearLayout>

@@ -1,9 +1,9 @@
-package com.player.rickandmorty.View.ui.character.Impl;
+package com.player.rickandmorty.View.ui.character.Impl.CharacterFragment;
 
 import com.player.rickandmorty.POJO.Character;
-import com.player.rickandmorty.View.ui.character.Interface.CharacterFragmentIterator;
-import com.player.rickandmorty.View.ui.character.Interface.CharacterFragmentPresenter;
-import com.player.rickandmorty.View.ui.character.Interface.CharacterFragmentView;
+import com.player.rickandmorty.View.ui.character.Interface.CharacterFragment.CharacterFragmentIterator;
+import com.player.rickandmorty.View.ui.character.Interface.CharacterFragment.CharacterFragmentPresenter;
+import com.player.rickandmorty.View.ui.character.Interface.CharacterFragment.CharacterFragmentView;
 
 import java.util.ArrayList;
 

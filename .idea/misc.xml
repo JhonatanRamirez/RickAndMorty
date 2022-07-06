@@ -3,12 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/jhon0/AndroidStudioProjects/RickAndMorty/app/src/main/res/drawable/elevation_card.xml" value="0.5661458333333333" />
         <entry key="..\:/Users/jhon0/AndroidStudioProjects/RickAndMorty/app/src/main/res/layout/activity_home.xml" value="0.55" />
         <entry key="..\:/Users/jhon0/AndroidStudioProjects/RickAndMorty/app/src/main/res/layout/activity_home2.xml" value="0.55" />
         <entry key="..\:/Users/jhon0/AndroidStudioProjects/RickAndMorty/app/src/main/res/layout/activity_login_by_google.xml" value="0.5359375" />
+        <entry key="..\:/Users/jhon0/AndroidStudioProjects/RickAndMorty/app/src/main/res/layout/activity_main.xml" value="0.55" />
         <entry key="..\:/Users/jhon0/AndroidStudioProjects/RickAndMorty/app/src/main/res/layout/activity_splash.xml" value="0.55" />
         <entry key="..\:/Users/jhon0/AndroidStudioProjects/RickAndMorty/app/src/main/res/layout/app_bar_home.xml" value="0.55" />
+        <entry key="..\:/Users/jhon0/AndroidStudioProjects/RickAndMorty/app/src/main/res/layout/card_adapter_episode.xml" value="0.55" />
+        <entry key="..\:/Users/jhon0/AndroidStudioProjects/RickAndMorty/app/src/main/res/layout/card_character.xml" value="0.55" />
         <entry key="..\:/Users/jhon0/AndroidStudioProjects/RickAndMorty/app/src/main/res/layout/content_home.xml" value="0.55" />
+        <entry key="..\:/Users/jhon0/AndroidStudioProjects/RickAndMorty/app/src/main/res/layout/fragment_episode_character.xml" value="0.55" />
         <entry key="..\:/Users/jhon0/AndroidStudioProjects/RickAndMorty/app/src/main/res/layout/fragment_gallery.xml" value="0.55" />
         <entry key="..\:/Users/jhon0/AndroidStudioProjects/RickAndMorty/app/src/main/res/layout/fragment_home.xml" value="0.55" />
         <entry key="..\:/Users/jhon0/AndroidStudioProjects/RickAndMorty/app/src/main/res/layout/nav_header_home.xml" value="0.55" />

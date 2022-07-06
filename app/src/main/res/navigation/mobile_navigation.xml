@@ -3,19 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/nav_gallery">
 
-    <fragment
-        android:id="@+id/nav_home"
-        android:name="com.player.rickandmorty.View.ui.episode.View.EpisodeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/nav_gallery"
         android:name="com.player.rickandmorty.View.ui.character.View.CharacterFragment"
         android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/fragment_gallery" >
+        <action
+            android:id="@+id/action_nav_gallery_to_episodeCharacter"
+            app:destination="@id/episodeCharacter" />
+    </fragment>
+    <fragment
+        android:id="@+id/episodeCharacter"
+        android:name="com.player.rickandmorty.View.ui.character.View.EpisodeCharacter"
+        android:label="Capitulos"
+        tools:layout="@layout/fragment_episode_character" />
 
 
 </navigation>

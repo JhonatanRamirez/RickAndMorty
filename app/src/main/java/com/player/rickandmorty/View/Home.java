@@ -3,9 +3,12 @@ package com.player.rickandmorty.View;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
+import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.Toolbar;
 
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
@@ -28,6 +31,8 @@ import com.player.rickandmorty.Auth.LoginByGoogle;
 import com.player.rickandmorty.R;
 import com.player.rickandmorty.databinding.ActivityHome2Binding;
 
+import org.w3c.dom.Text;
+
 import butterknife.ButterKnife;
 
 
@@ -37,6 +42,8 @@ public class Home extends AppCompatActivity {
     private ActivityHome2Binding binding;
     private GoogleSignInOptions gso;
     private GoogleSignInClient gsc;
+    private TextView name;
+    private TextView email;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,7 +57,7 @@ public class Home extends AppCompatActivity {
         DrawerLayout drawer = binding.drawerLayout;
         NavigationView navigationView = binding.navView;
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery)
+             R.id.nav_gallery)
                 .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_home);
@@ -62,6 +69,7 @@ public class Home extends AppCompatActivity {
                 .build();
         gsc = GoogleSignIn.getClient(this, gso);
         GoogleSignInAccount account = GoogleSignIn.getLastSignedInAccount(this);
+
     }
 
 
@@ -89,5 +97,11 @@ public class Home extends AppCompatActivity {
         });
     }
 
-
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if(item.getItemId()==R.id.action_settings){
+            signOut();
+        }
+        return super.onOptionsItemSelected(item);
+    }
 }

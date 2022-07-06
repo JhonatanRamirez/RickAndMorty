@@ -1,4 +1,4 @@
-package com.player.rickandmorty.View.ui.character.Impl;
+package com.player.rickandmorty.View.ui.character.Impl.CharacterFragment;
 
 import android.util.Log;
 
@@ -6,7 +6,6 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
-import com.android.volley.toolbox.JsonArrayRequest;
 
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.player.rickandmorty.Manager.VolleyManager;
@@ -14,8 +13,8 @@ import com.player.rickandmorty.POJO.Character;
 import com.player.rickandmorty.POJO.Location;
 import com.player.rickandmorty.POJO.Origin;
 import com.player.rickandmorty.Utils.Config;
-import com.player.rickandmorty.View.ui.character.Interface.CharacterFragmentIterator;
-import com.player.rickandmorty.View.ui.character.Interface.CharacterFragmentPresenter;
+import com.player.rickandmorty.View.ui.character.Interface.CharacterFragment.CharacterFragmentIterator;
+import com.player.rickandmorty.View.ui.character.Interface.CharacterFragment.CharacterFragmentPresenter;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -34,7 +33,7 @@ public class CharacterFragmentIteratorImpl implements CharacterFragmentIterator 
 
     @Override
     public void getCharacter() {
-        Log.e("TAG", "getCharacter llegooo " );
+
         JsonObjectRequest stringRequest = new JsonObjectRequest (Request.Method.GET, Config.getUrlChart(),null,
                 new Response.Listener<JSONObject>() {
                     @Override

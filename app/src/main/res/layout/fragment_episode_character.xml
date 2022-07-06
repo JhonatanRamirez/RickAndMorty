@@ -8,7 +8,7 @@
     tools:context=".View.ui.character.View.CharacterFragment">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/reciclerCharacter"
+        android:id="@+id/reciclerEpisode"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:layout_editor_absoluteX="1dp"
